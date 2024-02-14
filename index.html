@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form id="monFormulaire" class="container">
+    <div class="form-field">
+        <label for="username">Nom d'utilisateur:</label>
+        <input type="text" id="username" autocomplete="off">
+        <small class="error-message"></small>
+    </div>
+    <div class="form-field">
+        <label for="firstname">Prénom: </label>
+        <input type="text" id="firstname" autocomplete="off">
+        <small class="error-message"></small>
+    </div>
+    <div class="form-field">
+        <label for="email">Email:</label>
+        <input type="email" id="email" autocomplete="off"> 
+        <small class="error-message"></small>
+    </div>
+    <div class="form-field">
+        <label for="dob">Date de naissance:</label>
+        <input type="date" id="dob">
+        <small class="error-message"></small>
+    </div>
+    <div class="form-field">
+        <label for="password">Mot de passe:</label>
+        <input type="password" id="password" autocomplete="off">
+        <small class="error-message"></small>
+    </div>
+    <div class="form-field">
+        <label for="confirm-password">Confirmez votre mot de passe:</label>
+        <input type="password" id="confirm-password" autocomplete="off">
+        <small class="error-message"></small>
+    </div>
+    <div class="form-field">
+        <label for="sex">Sexe:</label>
+        <select id="sex" name="sex">
+            <option selected disabled value="">Choisir...</option>
+            <option value="homme">Homme</option>
+            <option value="femme">Femme</option>
+            <option value="ne_sait_pas">Ne sait pas</option>
+        </select>
+        <small class="error-message"></small>
+    </div>
+    <button type="submit">Soumettre</button>
+</form>
+
+<script src="exos.js"></script>
+</body>
+</html>
